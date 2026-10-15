@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUALO - Cuidado Personal y Bienestar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- BARRA DE NAVEGACIÓN RESPONSIVE -->
+    <header class="sticky top-0 z-50 bg-aqualo-light-nav bg-opacity-95 backdrop-blur-md border-b border-emerald-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center pl-2 sm:pl-0">
+                    <a href="index.html" class="text-xl sm:text-2xl lg:text-3xl font-serif font-bold tracking-widest text-aqualo-green">AQUALO</a>
+                </div>
+
+                <!-- Menú Completo visible en todos los dispositivos -->
+                <nav class="flex items-center space-x-2 sm:space-x-4 lg:space-x-8 text-xs sm:text-sm font-medium overflow-x-auto py-2">
+                    <a href="index.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Inicio</a>
+                    <a href="catalogo.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Catálogo</a>
+                    <a href="about.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Quiénes Somos</a>
+                    <a href="anmat.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">ANMAT</a>
+                    <a href="mayoristas.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Mayoristas</a>
+                    <a href="contacto.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Contacto</a>
+                </nav>
+
+                <!-- Botón CTA Dorado -->
+                <div class="flex-shrink-0 pr-2 sm:pr-0 hidden md:block">
+                    <a href="catalogo.html" class="bg-aqualo-gold text-white px-4 lg:px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium shadow-sm transition hover:opacity-90 whitespace-nowrap">Ver Catálogo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER DINÁMICO RESPONSIVE -->
+    <section class="relative bg-aqualo-green text-white py-20 sm:py-28 px-4 sm:px-6 lg:px-8 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-15"></div>
+        <div class="relative max-w-3xl text-center z-10">
+            <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-3 block">Bienestar y Pureza</span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight mb-4 sm:mb-6">Cuidado Personal Avanzado</h1>
+            <p class="text-base sm:text-xl text-slate-200 mb-8 sm:mb-10 font-light leading-relaxed">Descubre fórmulas innovadoras diseñadas para potenciar tu rutina diaria con respaldo y calidad garantizada.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="catalogo.html" class="bg-aqualo-gold text-white font-medium px-8 py-3.5 rounded-full shadow-md transition hover:opacity-95 text-sm">Explorar Colección</a>
+                <a href="about.html" class="border border-white border-opacity-40 text-white font-medium px-8 py-3.5 rounded-full hover:bg-white hover:bg-opacity-10 transition text-sm">Nuestra Propuesta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOQUES DE BENEFICIOS (Adaptable 1 col en celular, 3 en desktop) -->
+    <section class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-100 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-aqualo-gold"></div>
+                <div class="w-14 h-14 bg-aqualo-light-nav text-aqualo-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">✨</div>
+                <h3 class="text-lg font-serif font-bold mb-3 text-aqualo-green">Calidad Certificada</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Formulaciones exclusivas bajo estrictos estándares de seguridad y eficacia para tu piel.</p>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-100 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-aqualo-gold"></div>
+                <div class="w-14 h-14 bg-aqualo-light-nav text-aqualo-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">📦</div>
+                <h3 class="text-lg font-serif font-bold mb-3 text-aqualo-green">Envíos a Todo el País</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Recibe tus productos favoritos en la puerta de tu hogar de forma rápida y completamente segura.</p>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-100 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-aqualo-gold"></div>
+                <div class="w-14 h-14 bg-aqualo-light-nav text-aqualo-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">🔄</div>
+                <h3 class="text-lg font-serif font-bold mb-3 text-aqualo-green">Sistema de Recompra</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Suscríbete a nuestro sistema inteligente y olvídate de quedarte sin stock con beneficios únicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS RESPONSIVE -->
+    <section class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-14">
+                <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-2 block">Esenciales</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-aqualo-green tracking-tight">Productos Destacados</h2>
+                <div class="w-16 h-0.5 bg-aqualo-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 max-w-4xl mx-auto items-center">
+                <div class="p-2"><div id='product-component-1792021466774'></div></div>
+                <div class="p-2"><div id='product-component-1792021237318'></div></div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="catalogo.html" class="inline-block bg-aqualo-green text-white px-8 py-3.5 rounded-full font-medium text-sm hover:opacity-90 transition shadow-sm">Ver Todos los Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT DE SHOPIFY PARA EL INDEX -->
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy && window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); }
+      function loadScript() {
+        var script = document.createElement('script'); script.async = true; script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({ domain: '9knrgd-0a.myshopify.com', storefrontAccessToken: '76460d39ac4c5acd810a9eda02c22357' });
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          const opts = {
+            "product": {
+              "styles": {
+                "product": { "background-color": "transparent", "box-shadow": "none", "border": "none", "text-align": "left", "padding": "0px" },
+                "img": { "border-radius": "16px", "overflow": "hidden" },
+                "imgWrapper": { "border-radius": "16px", "overflow": "hidden" },
+                "button": { "font-family": "inherit", "font-weight": "600", "border-radius": "9999px", "background-color": "#C5A059", ":hover": { "background-color": "#B08D4C" } },
+                "title": { "font-family": "inherit", "font-weight": "700", "font-size": "18px", "color": "#1C3B2B" },
+                "price": { "color": "#1C3B2B", "font-weight": "600", "font-size": "16px" }
+              },
+              "buttonDestination": "modal",
+              "contents": { "options": false, "imgWithCarousel": false },
+              "text": { "button": "Ver producto" }
+            },
+            "modalProduct": {
+              "contents": { "img": false, "imgWithCarousel": true, "button": false, "buttonWithQuantity": true },
+              "styles": { "button": { "font-family": "inherit", "font-weight": "600", "border-radius": "9999px", "background-color": "#C5A059", ":hover": { "background-color": "#B08D4C" } } },
+              "text": { "button": "Agregar al carrito" }
+            }
+          };
+          ui.createComponent('product', { id: '15457397997853', node: document.getElementById('product-component-1792021466774'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+          ui.createComponent('product', { id: '15457398718749', node: document.getElementById('product-component-1792021237318'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
+
+    <!-- FOOTER RESPONSIVE -->
+    <footer class="bg-aqualo-green text-slate-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+            <div>
+                <h4 class="text-white font-serif font-bold text-xl mb-4 tracking-wide">AQUALO</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Innovación y bienestar para tu cuidado personal diario.</p>
+            </div>
+            <div>
+                <h5 class="text-aqualo-gold font-semibold mb-4 text-sm uppercase tracking-wider">Enlaces</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="politicas.html" class="hover:text-white transition">Política de Devolución</a></li>
+                    <li><a href="anmat.html" class="hover:text-white transition">AQUALO ANMAT</a></li>
+                    <li><a href="mayoristas.html" class="hover:text-white transition">Mayoristas (B2B)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-aqualo-gold font-semibold mb-4 text-sm uppercase tracking-wider">Contacto</h5>
+                <p class="text-sm text-slate-400">contacto@aqualo.store</p>
+            </div>
+            <div>
+                <h5 class="text-aqualo-gold font-semibold mb-4 text-sm uppercase tracking-wider">Newsletter</h5>
+                <form id="newsletter-form" class="flex flex-col space-y-3">
+                    <input type="email" id="newsletter-email" placeholder="Tu correo electrónico" class="bg-white bg-opacity-10 border border-white border-opacity-20 px-4 py-2.5 rounded-full text-sm text-white placeholder-slate-400 focus:outline-none focus:border-aqualo-gold">
+                    <button type="submit" class="bg-aqualo-gold text-white py-2.5 rounded-full text-sm font-medium transition hover:opacity-90 shadow-sm">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-white border-opacity-10 text-center text-xs text-slate-400">
+            &copy; 2026 AQUALO. Todos los derechos reservados. (Demo para cliente).
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

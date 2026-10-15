@@ -1,0 +1,35 @@
+
+
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+
+/* Paleta de Colores Oficial AQUALO */
+:root {
+    --aqualo-green: #1C3B2B;       /* Verde oscuro principal */
+    --aqualo-light-nav: #E8F2EC;    /* Verde claro / celeste muy clarito para navegación */
+    --aqualo-gold: #C5A059;         /* Dorado para detalles y acentos */
+    --aqualo-gold-hover: #B08D4C;   /* Dorado oscuro para hover */
+}
+
+.bg-aqualo-green { background-color: var(--aqualo-green); }
+.text-aqualo-green { color: var(--aqualo-green); }
+.border-aqualo-green { border-color: var(--aqualo-green); }
+
+.bg-aqualo-light-nav { background-color: var(--aqualo-light-nav); }
+.text-aqualo-light-nav { color: var(--aqualo-light-nav); }
+
+.bg-aqualo-gold { background-color: var(--aqualo-gold); }
+.text-aqualo-gold { color: var(--aqualo-gold); }
+.border-aqualo-gold { border-color: var(--aqualo-gold); }
+.bg-aqualo-gold:hover { background-color: var(--aqualo-gold-hover); }
+
+/* Ajustes responsivos globales para componentes externos de Shopify */
+.shopify-buy__product, .shopify-buy__layout {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* Transiciones fluidas */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+}
