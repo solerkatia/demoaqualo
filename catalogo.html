@@ -9,24 +9,41 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased font-sans">
 
-    <!-- BARRA DE NAVEGACIÓN COMPLETA -->
+    <!-- BARRA DE NAVEGACIÓN -->
     <header class="sticky top-0 z-50 bg-aqualo-light-nav bg-opacity-95 backdrop-blur-md border-b border-emerald-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center pl-2 sm:pl-0">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 lg:py-0">
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:h-20 items-center gap-3 lg:gap-0">
+                
+                <!-- Logo -->
+                <div class="w-full lg:w-auto flex justify-between lg:justify-start items-center">
                     <a href="index.html" class="text-xl sm:text-2xl lg:text-3xl font-serif font-bold tracking-widest text-aqualo-green">AQUALO</a>
+                    
+                    <!-- Botón rápido en celular -->
+                    <div class="lg:hidden">
+                        <a href="catalogo.html" class="bg-aqualo-gold text-white px-3.5 py-1.5 rounded-full text-xs font-medium shadow-sm">Ver Catálogo</a>
+                    </div>
                 </div>
-                <nav class="flex items-center space-x-2 sm:space-x-4 lg:space-x-8 text-xs sm:text-sm font-medium overflow-x-auto py-2">
-                    <a href="index.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Inicio</a>
-                    <a href="catalogo.html" class="text-aqualo-green font-semibold border-b-2 border-aqualo-gold pb-1 whitespace-nowrap">Catálogo</a>
-                    <a href="about.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Quiénes Somos</a>
-                    <a href="anmat.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">ANMAT</a>
-                    <a href="mayoristas.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Mayoristas</a>
-                    <a href="contacto.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Contacto</a>
+
+                <!-- Menú con puntos dorados visibles en celular y PC -->
+                <nav class="w-full lg:w-auto flex flex-wrap justify-center items-center gap-x-2 sm:gap-x-4 gap-y-1.5 text-xs sm:text-sm font-medium py-1 lg:py-0 text-slate-700">
+                    <a href="index.html" class="hover:text-aqualo-green transition py-0.5 hover:border-b-2 hover:border-aqualo-gold">Inicio</a>
+                    <span class="text-aqualo-gold text-[8px] sm:text-[10px]">✦</span>
+                    <a href="catalogo.html" class="hover:text-aqualo-green transition py-0.5 hover:border-b-2 hover:border-aqualo-gold">Catálogo</a>
+                    <span class="text-aqualo-gold text-[8px] sm:text-[10px]">✦</span>
+                    <a href="about.html" class="hover:text-aqualo-green transition py-0.5 hover:border-b-2 hover:border-aqualo-gold">Quiénes Somos</a>
+                    <span class="text-aqualo-gold text-[8px] sm:text-[10px]">✦</span>
+                    <a href="anmat.html" class="hover:text-aqualo-green transition py-0.5 hover:border-b-2 hover:border-aqualo-gold">ANMAT</a>
+                    <span class="text-aqualo-gold text-[8px] sm:text-[10px]">✦</span>
+                    <a href="mayoristas.html" class="hover:text-aqualo-green transition py-0.5 hover:border-b-2 hover:border-aqualo-gold">Mayoristas</a>
+                    <span class="text-aqualo-gold text-[8px] sm:text-[10px]">✦</span>
+                    <a href="contacto.html" class="hover:text-aqualo-green transition py-0.5 hover:border-b-2 hover:border-aqualo-gold">Contacto</a>
                 </nav>
-                <div class="flex-shrink-0 pr-2 sm:pr-0 hidden md:block">
-                    <a href="catalogo.html" class="bg-aqualo-gold text-white px-4 lg:px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium shadow-sm transition hover:opacity-90 whitespace-nowrap">Ver Catálogo</a>
+
+                <!-- Botón de acción para PC -->
+                <div class="flex-shrink-0 hidden lg:block">
+                    <a href="catalogo.html" class="bg-aqualo-gold text-white px-6 py-2.5 rounded-full text-sm font-medium shadow-sm transition hover:opacity-90">Ver Catálogo</a>
                 </div>
+
             </div>
         </div>
     </header>
