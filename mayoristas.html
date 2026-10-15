@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUALO - Catálogo Mayorista y Distribuidores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- BARRA DE NAVEGACIÓN COMPLETA -->
+    <header class="sticky top-0 z-50 bg-aqualo-light-nav bg-opacity-95 backdrop-blur-md border-b border-emerald-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center pl-2 sm:pl-0">
+                    <a href="index.html" class="text-xl sm:text-2xl lg:text-3xl font-serif font-bold tracking-widest text-aqualo-green">AQUALO</a>
+                </div>
+                <nav class="flex items-center space-x-2 sm:space-x-4 lg:space-x-8 text-xs sm:text-sm font-medium overflow-x-auto py-2">
+                    <a href="index.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Inicio</a>
+                    <a href="catalogo.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Catálogo</a>
+                    <a href="about.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Quiénes Somos</a>
+                    <a href="anmat.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">ANMAT</a>
+                    <a href="mayoristas.html" class="text-aqualo-green font-semibold border-b-2 border-aqualo-gold pb-1 whitespace-nowrap">Mayoristas</a>
+                    <a href="contacto.html" class="text-slate-700 hover:text-aqualo-green whitespace-nowrap transition">Contacto</a>
+                </nav>
+                <div class="flex-shrink-0 pr-2 sm:pr-0 hidden md:block">
+                    <a href="https://wa.me/5491157634062?text=Hola,%20quiero%20realizar%20una%20compra%20mayorista" target="_blank" class="bg-[#25D366] hover:bg-[#20ba5a] text-white px-4 lg:px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium shadow-sm transition inline-flex items-center gap-2 whitespace-nowrap">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-4 h-4">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ENCABEZADO DE SECCIÓN -->
+    <section class="relative bg-aqualo-green text-white py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-15"></div>
+        <div class="relative max-w-3xl mx-auto z-10">
+            <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-3 block">Catálogo Mayorista · Distribuidores y Puntos de Venta</span>
+            <h1 class="text-3xl sm:text-5xl font-serif font-bold tracking-tight mb-4">Vendé el shampoo que tus clientas ya están buscando.</h1>
+            <p class="text-sm sm:text-lg text-slate-200 font-light leading-relaxed mb-8">Beneficios, modo de uso, resultados y todo lo que necesitás para ofrecer Aqualo en tu local, farmacia, peluquería o emprendimiento.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/5491157634062?text=Hola,%20quiero%20realizar%20una%20compra%20mayorista" target="_blank" class="bg-[#25D366] hover:bg-[#20ba5a] text-white font-medium px-8 py-3.5 rounded-full shadow-sm transition inline-flex items-center gap-2 text-sm">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-4 h-4">
+                    Quiero ser distribuidor
+                </a>
+                <a href="#linea" class="bg-white bg-opacity-10 text-white border border-white border-opacity-30 font-medium px-8 py-3.5 rounded-full hover:bg-opacity-20 transition text-sm">Ver Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CANALES DE DISTRIBUCIÓN -->
+    <div class="bg-white border-b border-slate-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-slate-600 font-medium text-center">
+            <span class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100">💊 Farmacias y perfumerías</span>
+            <span class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100">💇 Peluquerías y barberías</span>
+            <span class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100">🌿 Dietéticas</span>
+            <span class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100">💻 Revendedores online</span>
+            <span class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100">🚀 Emprendedores</span>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+
+        <!-- MÉTRICAS Y CONFIANZA -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-2xl sm:text-3xl font-serif font-bold text-aqualo-green mb-1">65,5 mil</span>
+                <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Seguidores en Instagram</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-2xl sm:text-3xl font-serif font-bold text-aqualo-green mb-1">+1.000</span>
+                <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Ventas en Mercado Libre</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-2xl sm:text-3xl font-serif font-bold text-aqualo-green mb-1">4.5 ★</span>
+                <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">191 reseñas reales</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-2xl sm:text-3xl font-serif font-bold text-aqualo-green mb-1">3°</span>
+                <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">En Shampoos (ML)</span>
+            </div>
+        </div>
+
+        <!-- QUÉ ES AQUALO -->
+        <div class="bg-white p-8 sm:p-12 rounded-3xl shadow-sm border border-slate-100 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-2 block">¿Qué es Aqualo?</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-aqualo-green mb-4">Una marca argentina enfocada en un solo problema.</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    La caída y el debilitamiento del pelo. Premium accesible, sin promesas vacías, con mejora progresiva real. Y productos de recompra: la clienta los incorpora a su rutina diaria y vuelve.
+                </p>
+            </div>
+            <div class="bg-aqualo-light-nav p-8 rounded-2xl border border-emerald-100 text-center italic font-serif text-aqualo-green text-lg leading-relaxed">
+                “Primero dejá de dañar el pelo con el shampoo de todos los días. Después el pelo empieza a mejorar.”
+            </div>
+        </div>
+
+        <!-- POR QUÉ SUMAR AQUALO -->
+        <div class="space-y-10">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-2 block">Ventajas comerciales</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-aqualo-green">Por qué sumar Aqualo a tu local</h2>
+                <p class="text-slate-600 text-sm mt-2">Una marca que vende sola. Vos ponés la góndola.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <span class="text-aqualo-gold font-bold text-sm mb-2 block">01</span>
+                    <h3 class="font-serif font-bold text-aqualo-green text-lg mb-2">Demanda que ya existe</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Comunidad real en Instagram y tienda oficial verificada en Mercado Libre. Tu clienta ya la vio antes de encontrarla en tu local.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <span class="text-aqualo-gold font-bold text-sm mb-2 block">02</span>
+                    <h3 class="font-serif font-bold text-aqualo-green text-lg mb-2">Producto de recompra</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Se usa todos los días y los resultados llegan con constancia. La clienta que arranca, vuelve.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <span class="text-aqualo-gold font-bold text-sm mb-2 block">03</span>
+                    <h3 class="font-serif font-bold text-aqualo-green text-lg mb-2">Ticket más alto sin descuento</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Shampoo, acondicionador, sérum y cápsulas se complementan. El cross-sell sale natural en el mostrador.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <span class="text-aqualo-gold font-bold text-sm mb-2 block">04</span>
+                    <h3 class="font-serif font-bold text-aqualo-green text-lg mb-2">Menos devoluciones</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Marca honesta: no promete milagros. Vendés con expectativas reales y nadie vuelve a reclamar.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <span class="text-aqualo-gold font-bold text-sm mb-2 block">05</span>
+                    <h3 class="font-serif font-bold text-aqualo-green text-lg mb-2">Material de venta incluido</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Catálogo, modo de uso, timeline de resultados y respuestas a las objeciones más comunes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <span class="text-aqualo-gold font-bold text-sm mb-2 block">06</span>
+                    <h3 class="font-serif font-bold text-aqualo-green text-lg mb-2">Industria Argentina</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Fabricado acá, sin depender de importaciones. Reposición rápida y previsible para tu negocio.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LA LÍNEA COMPLETA -->
+        <div id="linea" class="space-y-10">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-2 block">Portafolio</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-aqualo-green">La Línea Completa</h2>
+                <p class="text-slate-600 text-sm mt-2">Cuatro productos. Un sistema completo para el pelo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Producto 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-50 text-aqualo-green px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">01 · Más Vendido</span>
+                        <h3 class="text-xl font-serif font-bold text-aqualo-green mb-2">Shampoo Aqualo</h3>
+                        <p class="text-xs font-semibold text-aqualo-gold mb-3">Romero + Queratina Hidrolizada · Uso frecuente</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Sin sulfatos agresivos. Cuida el cuero cabelludo, que es donde arranca el problema.</p>
+                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                            <li>✓ Ayuda a reducir la caída fortaleciendo la raíz</li>
+                            <li>✓ Suave y manejable desde los primeros usos</li>
+                            <li>✓ No reseca ni debilita · 500 ml</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-50 text-aqualo-green px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">02 · El Complemento</span>
+                        <h3 class="text-xl font-serif font-bold text-aqualo-green mb-2">Acondicionador Aqualo</h3>
+                        <p class="text-xs font-semibold text-aqualo-gold mb-3">Romero + Queratina Hidrolizada · Certificado ANMAT</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Sin siliconas, sin parabenos, sin sulfatos. No "maquilla" el pelo: lo deja liviano y nutrido.</p>
+                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                            <li>✓ Suavidad y nutrición en el largo del cabello</li>
+                            <li>✓ Fortalece y desenreda sin pesar</li>
+                            <li>✓ Ideal para pelo dañado por tintura · 500 ml</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-50 text-aqualo-green px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">03 · Tratamiento</span>
+                        <h3 class="text-xl font-serif font-bold text-aqualo-green mb-2">Sérum Capilar Control Caída</h3>
+                        <p class="text-xs font-semibold text-aqualo-gold mb-3">Capixyl + Cafeína + Romero + Biotina</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Tratamiento intensivo para el cuero cabelludo. 5-6 gotas en la yema de los dedos, masaje circular. Sin enjuague.</p>
+                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                            <li>✓ Ayuda a reducir la caída con uso constante</li>
+                            <li>✓ 4 activos en una sola fórmula de 30 ml</li>
+                            <li>✓ Sin hormonas, sin receta, 1 min por día</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-50 text-aqualo-green px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">04 · Por Dentro</span>
+                        <h3 class="text-xl font-serif font-bold text-aqualo-green mb-2">Cápsulas Pelo, Piel y Uñas</h3>
+                        <p class="text-xs font-semibold text-aqualo-gold mb-3">12 activos · Biotina + Zinc + Colágeno</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">El shampoo cuida el pelo que ya tenés; las cápsulas alimentan el que está por nacer.</p>
+                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                            <li>✓ Menos caída, quiebre y uñas frágiles</li>
+                            <li>✓ Mayor elasticidad en la piel</li>
+                            <li>✓ Suplemento dietario con +5.000 clientas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PREGUNTAS FRECUENTES (FAQ) -->
+        <div class="space-y-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-2 block">Dudas comunes</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-aqualo-green">Lo que nos preguntan antes de arrancar</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="font-serif font-bold text-aqualo-green text-base mb-2">¿Necesito tener un local?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No. Podés vender en tu local, en tu consultorio o peluquería, o online por redes y WhatsApp. Muchos arrancan como revendedores.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="font-serif font-bold text-aqualo-green text-base mb-2">¿Puedo combinar productos en el pedido?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Sí. Podés armar tu pedido mezclando shampoo, acondicionador, sérum y cápsulas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="font-serif font-bold text-aqualo-green text-base mb-2">¿Cuándo nota resultados la clienta?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">El pelo se siente más suave desde los primeros usos. Menos caída y más fuerza, entre las 3 y 8 semanas de uso constante. Explicarlo así baja los reclamos y sube la recompra.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="font-serif font-bold text-aqualo-green text-base mb-2">¿Sirve para hombres y mujeres?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Sí. La línea está pensada para cualquier persona que nota caída o pelo debilitado.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm md:col-span-2">
+                    <h3 class="font-serif font-bold text-aqualo-green text-base mb-2">¿Me ayudan a vender?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Sí. Te pasamos el catálogo con modo de uso, resultados esperables y respuestas a las objeciones más comunes. Además, la marca ya tiene demanda en Instagram y Mercado Libre.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONDICIONES MAYORISTAS -->
+        <div class="bg-white p-8 sm:p-12 rounded-3xl shadow-sm border border-slate-100 space-y-6">
+            <div class="text-center max-w-xl mx-auto">
+                <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-2 block">Condiciones claras, sin letra chica</span>
+                <h2 class="text-2xl font-serif font-bold text-aqualo-green">Información para mayoristas</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center pt-4">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <span class="text-aqualo-gold text-xs font-semibold uppercase tracking-widest block mb-1">Pedido Mínimo</span>
+                    <h3 class="text-lg font-serif font-bold text-aqualo-green mb-1">12 unidades</h3>
+                    <p class="text-xs text-slate-500">Combinables entre productos.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <span class="text-aqualo-gold text-xs font-semibold uppercase tracking-widest block mb-1">Envío</span>
+                    <h3 class="text-lg font-serif font-bold text-aqualo-green mb-1">A todo el país</h3>
+                    <p class="text-xs text-slate-500">Consultá envío bonificado por volumen.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <span class="text-aqualo-gold text-xs font-semibold uppercase tracking-widest block mb-1">Formas de Pago</span>
+                    <h3 class="text-lg font-serif font-bold text-aqualo-green mb-1">Transferencia / MP</h3>
+                    <p class="text-xs text-slate-500">Datos al confirmar el pedido.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <span class="text-aqualo-gold text-xs font-semibold uppercase tracking-widest block mb-1">Respuesta</span>
+                    <h3 class="text-lg font-serif font-bold text-aqualo-green mb-1">&lt; 48 hs</h3>
+                    <p class="text-xs text-slate-500">Lista de precios + catálogo por mail.</p>
+                </div>
+            </div>
+            <div class="text-center pt-4">
+                <a href="https://wa.me/5491157634062?text=Hola,%20quiero%20realizar%20una%20compra%20mayorista" target="_blank" class="block w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-medium py-4 px-6 rounded-2xl shadow-sm transition text-center text-base inline-flex items-center justify-center gap-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6">
+                    Pedir lista de precios por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- OPINIONES DE CLIENTES -->
+        <div class="space-y-8 pt-4">
+            <div class="text-center">
+                <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold mb-2 block">Lo que dicen nuestros clientes</span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-aqualo-green">Opiniones reales, sin filtro</h3>
+                <div class="flex items-center justify-center gap-2 mt-3">
+                    <span class="text-amber-500 text-lg">★★★★★</span>
+                    <span class="font-bold text-slate-700">4.8</span>
+                    <span class="text-slate-500 text-sm">de 5 estrellas (+1.000 opiniones)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-aqualo-gold uppercase tracking-wider">Compra verificada</span>
+                        <p class="text-slate-600 text-sm mt-3 italic">“Es excelente. Hace poco comencé a usarlo y ya noto la diferencia. Lo súper recomiendo.”</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-aqualo-light-nav text-aqualo-green font-bold flex items-center justify-center text-xs">C</div>
+                        <span class="text-sm font-semibold text-slate-700">Carolina M. · Mercado Libre</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-aqualo-gold uppercase tracking-wider">Compra verificada</span>
+                        <p class="text-slate-600 text-sm mt-3 italic">“Recién empiezo a usarlo pero me encanta su perfume y siento la suavidad en mi pelo apenas lo aplico.”</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-aqualo-light-nav text-aqualo-green font-bold flex items-center justify-center text-xs">L</div>
+                        <span class="text-sm font-semibold text-slate-700">Lucía R. · Mercado Libre</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-aqualo-gold uppercase tracking-wider">Compra verificada</span>
+                        <p class="text-slate-600 text-sm mt-3 italic">“Teniendo alergia, parece que estoy menos inflamada. Lo noté a los pocos días. Sigo usándolo.”</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-aqualo-light-nav text-aqualo-green font-bold flex items-center justify-center text-xs">M</div>
+                        <span class="text-sm font-semibold text-slate-700">Marcela P. · Mercado Libre</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-aqualo-gold uppercase tracking-wider">Compra verificada</span>
+                        <p class="text-slate-600 text-sm mt-3 italic">“Es increíble cómo me mejoró la piel. Antes me daba comezón el agua y ahora no. El filtro vale cada peso.”</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-aqualo-light-nav text-aqualo-green font-bold flex items-center justify-center text-xs">D</div>
+                        <span class="text-sm font-semibold text-slate-700">Diego A. · Filtro de ducha</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA FINAL CON BOTONES LARGOS (WHATSAPP INSTITUCIONAL Y GMAIL) -->
+        <div class="text-center bg-aqualo-green text-white p-8 sm:p-12 rounded-3xl shadow-sm space-y-6">
+            <span class="text-aqualo-gold uppercase tracking-widest text-xs font-semibold block">Arrancá a emprender hoy</span>
+            <h2 class="text-2xl sm:text-4xl font-serif font-bold">¿Arrancamos? Pedí tu lista de precios.</h2>
+            <p class="text-slate-200 text-sm sm:text-base max-w-xl mx-auto">Escribinos por WhatsApp o mandanos un mail con el asunto <strong class="text-white">"Quiero realizar una compra mayorista"</strong> y te respondemos con precios, mínimos y catálogo.</p>
+            
+            <!-- Botones Largos Ancho Completo -->
+            <div class="max-w-md mx-auto space-y-4 pt-4">
+                <a href="https://wa.me/5491157634062?text=Hola,%20quiero%20realizar%20una%20compra%20mayorista" target="_blank" class="block w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold py-4 px-6 rounded-2xl shadow-md transition text-center text-base tracking-wide inline-flex items-center justify-center gap-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6">
+                    Escribir por WhatsApp (+54 9 11 5763-4062)
+                </a>
+                <a href="mailto:contactoaqualo@gmail.com?subject=Quiero%20realizar%20una%20compra%20mayorista" class="block w-full bg-white text-aqualo-green font-semibold py-4 px-6 rounded-2xl shadow-md hover:bg-slate-100 transition text-center text-base tracking-wide">
+                    ✉️ Enviar un Mail (contactoaqualo@gmail.com)
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER RESPONSIVE -->
+    <footer class="bg-aqualo-green text-slate-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+            <div>
+                <h4 class="text-white font-serif font-bold text-xl mb-4 tracking-wide">AQUALO</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Innovación y bienestar para tu cuidado personal diario.</p>
+            </div>
+            <div>
+                <h5 class="text-aqualo-gold font-semibold mb-4 text-sm uppercase tracking-wider">Enlaces</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="politicas.html" class="hover:text-white transition">Política de Devolución</a></li>
+                    <li><a href="anmat.html" class="hover:text-white transition">AQUALO ANMAT</a></li>
+                    <li><a href="mayoristas.html" class="hover:text-white transition">Mayoristas (B2B)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-aqualo-gold font-semibold mb-4 text-sm uppercase tracking-wider">Contacto</h5>
+                <p class="text-sm text-slate-400">contactoaqualo@gmail.com</p>
+            </div>
+            <div>
+                <h5 class="text-aqualo-gold font-semibold mb-4 text-sm uppercase tracking-wider">Newsletter</h5>
+                <form id="newsletter-form" class="flex flex-col space-y-3">
+                    <input type="email" id="newsletter-email" placeholder="Tu correo electrónico" class="bg-white bg-opacity-10 border border-white border-opacity-20 px-4 py-2.5 rounded-full text-sm text-white placeholder-slate-400 focus:outline-none focus:border-aqualo-gold">
+                    <button type="submit" class="bg-aqualo-gold text-white py-2.5 rounded-full text-sm font-medium transition hover:opacity-90 shadow-sm">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-white border-opacity-10 text-center text-xs text-slate-400">
+            &copy; 2026 AQUALO. Todos los derechos reservados. (Demo para cliente).
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

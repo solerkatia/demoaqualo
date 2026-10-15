@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Función global para filtrar y ordenar los productos del catálogo (integrada con Shopify)
+// Función global para filtrar y ordenar los productos del catálogo de forma segura
 function applyCatalogFilters() {
     const filterStockSelect = document.getElementById('filter-stock');
     const sortProductsSelect = document.getElementById('sort-products');
@@ -41,13 +41,9 @@ function applyCatalogFilters() {
     const sortProducts = sortProductsSelect.value;
     let items = Array.from(grid.getElementsByClassName('product-item'));
 
-    // Detectar estado de stock basándose en el texto generado por Shopify
+    // Filtrado seguro basado en el atributo data-stock o visibilidad general
     items.forEach(item => {
-        const buttonText = item.innerText || "";
-        const isOut = buttonText.includes("Out of stock") || buttonText.includes("Agotado");
-        item.setAttribute('data-stock', isOut ? 'out' : 'in');
-
-        const stock = item.getAttribute('data-stock');
+        const stock = item.getAttribute('data-stock') || 'in';
         if (filterStock === 'all' || (filterStock === 'in-stock' && stock === 'in') || (filterStock === 'out-of-stock' && stock === 'out')) {
             item.style.display = 'block';
         } else {
@@ -55,10 +51,10 @@ function applyCatalogFilters() {
         }
     });
 
-    // Ordenamiento Alfabético A-Z / Z-A
+    // Ordenamiento Alfabético A-Z / Z-A basado en el atributo data-name
     items.sort((a, b) => {
-        const nameA = a.getAttribute('data-name').toLowerCase();
-        const nameB = b.getAttribute('data-name').toLowerCase();
+        const nameA = (a.getAttribute('data-name') || '').toLowerCase();
+        const nameB = (b.getAttribute('data-name') || '').toLowerCase();
         if (sortProducts === 'az') {
             return nameA.localeCompare(nameB);
         } else {
@@ -66,6 +62,6 @@ function applyCatalogFilters() {
         }
     });
 
-    // Reordenar los elementos en el DOM
+    // Reordenar los elementos en el DOM sin alterar los componentes de Shopify
     items.forEach(item => grid.appendChild(item));
 }

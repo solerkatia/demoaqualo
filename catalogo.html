@@ -68,171 +68,91 @@
         <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
 
             <!-- 1. SHAMPOO -->
-            <div class="product-item p-2" data-name="Shampoo AQUALO">
+            <div class="product-item p-2" data-name="Shampoo AQUALO" data-stock="in">
                 <div id='product-component-1792021466774'></div>
             </div>
 
             <!-- 2. ACONDICIONADOR -->
-            <div class="product-item p-2" data-name="Acondicionador AQUALO">
+            <div class="product-item p-2" data-name="Acondicionador AQUALO" data-stock="in">
                 <div id='product-component-1792021237318'></div>
             </div>
 
             <!-- 3. CEPILLO -->
-            <div class="product-item p-2" data-name="Cepillo Capilar">
+            <div class="product-item p-2" data-name="Cepillo Capilar" data-stock="in">
                 <div id='product-component-1792021492588'></div>
             </div>
 
             <!-- 4. KIT ANTICAÍDA -->
-            <div class="product-item p-2" data-name="Kit Anticaída Completo">
+            <div class="product-item p-2" data-name="Kit Anticaída Completo" data-stock="in">
                 <div id='product-component-1792021513997'></div>
             </div>
 
             <!-- 5. REPUESTO FILTRO DE DUCHA -->
-            <div class="product-item p-2" data-name="Repuesto Filtro de Ducha">
+            <div class="product-item p-2" data-name="Repuesto Filtro de Ducha" data-stock="in">
                 <div id='product-component-1792021546835'></div>
             </div>
 
             <!-- 6. MASAJEADOR ANTICAÍDA -->
-            <div class="product-item p-2" data-name="Masajeador Capilar Anticaída">
+            <div class="product-item p-2" data-name="Masajeador Capilar Anticaída" data-stock="in">
                 <div id='product-component-1792021571973'></div>
             </div>
 
             <!-- 7. SÉRUM ANTICAÍDA -->
-            <div class="product-item p-2" data-name="Sérum Anticaída Concentrado">
+            <div class="product-item p-2" data-name="Sérum Anticaída Concentrado" data-stock="in">
                 <div id='product-component-1792021594178'></div>
             </div>
 
         </div>
     </main>
 
-    <!-- SCRIPT UNIFICADO DE SHOPIFY (Carga única y estable para los 7 productos) -->
+    <!-- SCRIPT DE SHOPIFY LIMPIO (Carga única idéntica al index) -->
     <script type="text/javascript">
     /*<![CDATA[*/
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      if (window.ShopifyBuy && window.ShopifyBuy.UI) {
-        ShopifyBuyInit();
-      } else {
-        loadScript();
-      }
+      if (window.ShopifyBuy && window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); }
       function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
+        var script = document.createElement('script'); script.async = true; script.src = scriptURL;
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
         script.onload = ShopifyBuyInit;
       }
       function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: '9knrgd-0a.myshopify.com',
-          storefrontAccessToken: '76460d39ac4c5acd810a9eda02c22357',
-        });
+        var client = ShopifyBuy.buildClient({ domain: '9knrgd-0a.myshopify.com', storefrontAccessToken: '76460d39ac4c5acd810a9eda02c22357' });
         ShopifyBuy.UI.onReady(client).then(function (ui) {
-          
-          const productOptions = {
+          const opts = {
             "product": {
               "styles": {
-                "product": {
-                  "background-color": "transparent",
-                  "box-shadow": "none",
-                  "border": "none",
-                  "text-align": "left",
-                  "padding": "0px"
-                },
-                "img": {
-                  "border-radius": "16px",
-                  "overflow": "hidden"
-                },
-                "imgWrapper": {
-                  "border-radius": "16px",
-                  "overflow": "hidden"
-                },
-                "button": {
-                  "font-family": "inherit",
-                  "font-weight": "bold",
-                  "border-radius": "9999px",
-                  "background-color": "#C5A059",
-                  ":hover": { "background-color": "#B08D4C" }
-                },
-                "title": {
-                  "font-family": "inherit",
-                  "font-weight": "700",
-                  "font-size": "16px",
-                  "color": "#1C3B2B"
-                },
-                "price": {
-                  "color": "#1C3B2B",
-                  "font-weight": "600",
-                  "font-size": "15px"
-                }
+                "product": { "background-color": "transparent", "box-shadow": "none", "border": "none", "text-align": "left", "padding": "0px" },
+                "img": { "border-radius": "16px", "overflow": "hidden" },
+                "imgWrapper": { "border-radius": "16px", "overflow": "hidden" },
+                "button": { "font-family": "inherit", "font-weight": "600", "border-radius": "9999px", "background-color": "#C5A059", ":hover": { "background-color": "#B08D4C" } },
+                "title": { "font-family": "inherit", "font-weight": "700", "font-size": "18px", "color": "#1C3B2B" },
+                "price": { "color": "#1C3B2B", "font-weight": "600", "font-size": "16px" }
               },
               "buttonDestination": "modal",
-              "contents": {
-                "options": false,
-                "imgWithCarousel": false
-              },
-              "text": {
-                "button": "Ver producto"
-              }
+              "contents": { "options": false, "imgWithCarousel": false },
+              "text": { "button": "Ver producto" }
             },
             "modalProduct": {
-              "contents": {
-                "img": false,
-                "imgWithCarousel": true,
-                "button": false,
-                "buttonWithQuantity": true
-              },
-              "styles": {
-                "button": {
-                  "font-family": "inherit",
-                  "font-weight": "bold",
-                  "border-radius": "9999px",
-                  "background-color": "#C5A059",
-                  ":hover": { "background-color": "#B08D4C" }
-                }
-              },
-              "text": {
-                "button": "Agregar al carrito"
-              }
+              "contents": { "img": false, "imgWithCarousel": true, "button": false, "buttonWithQuantity": true },
+              "styles": { "button": { "font-family": "inherit", "font-weight": "600", "border-radius": "9999px", "background-color": "#C5A059", ":hover": { "background-color": "#B08D4C" } } },
+              "text": { "button": "Agregar al carrito" }
             }
           };
 
-          // Renderizado de cada uno de los 7 productos con sus IDs oficiales
-          const productsData = [
-            { id: '15457397997853', node: 'product-component-1792021466774' }, // Shampoo
-            { id: '15457398718749', node: 'product-component-1792021237318' }, // Acondicionador
-            { id: '15457399636253', node: 'product-component-1792021492588' }, // Cepillo
-            { id: '15457400029469', node: 'product-component-1792021513997' }, // Kit Anticaída
-            { id: '15457401504029', node: 'product-component-1792021546835' }, // Repuesto Filtro
-            { id: '15457400652061', node: 'product-component-1792021571973' }, // Masajeador
-            { id: '15457402454301', node: 'product-component-1792021594178' }  // Sérum
-          ];
-
-          productsData.forEach(item => {
-            const el = document.getElementById(item.node);
-            if (el) {
-              ui.createComponent('product', {
-                id: item.id,
-                node: el,
-                moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D',
-                options: productOptions
-              });
-            }
-          });
-
-          // Sincronizar filtros de stock al terminar de cargar
-          setTimeout(() => {
-              if (typeof applyCatalogFilters === 'function') {
-                  applyCatalogFilters();
-              }
-          }, 1500);
-
+          // Renderizado directo de los 7 productos
+          ui.createComponent('product', { id: '15457397997853', node: document.getElementById('product-component-1792021466774'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+          ui.createComponent('product', { id: '15457398718749', node: document.getElementById('product-component-1792021237318'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+          ui.createComponent('product', { id: '15457399636253', node: document.getElementById('product-component-1792021492588'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+          ui.createComponent('product', { id: '15457400029469', node: document.getElementById('product-component-1792021513997'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+          ui.createComponent('product', { id: '15457401504029', node: document.getElementById('product-component-1792021546835'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+          ui.createComponent('product', { id: '15457400652061', node: document.getElementById('product-component-1792021571973'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
+          ui.createComponent('product', { id: '15457402454301', node: document.getElementById('product-component-1792021594178'), moneyFormat: '%24%7B%7Bamount_with_comma_separator%7D%7D', options: opts });
         });
       }
     })();
     /*]]>*/
     </script>
-
 
     <!-- FOOTER RESPONSIVE -->
     <footer class="bg-aqualo-green text-slate-300 py-16">
